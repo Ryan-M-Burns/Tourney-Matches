@@ -1,6 +1,4 @@
 import React from "react";
-import Player from "./Player";
-import PlayerList from "./PlayerList";
 
 const Match = () => {
   return (
