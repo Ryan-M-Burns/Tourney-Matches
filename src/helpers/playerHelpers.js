@@ -7,11 +7,11 @@ export const preparePlayerData = (playerData) => {
 };
 
 
-export const addWinsToPlayers = (playerDataArray, matchData) => {
+export const addWinsToPlayers = (playerDataArray, matchArr) => {
 
   return playerDataArray.map(player => {
 
-    const currentWins = matchData.reduce((accumulator, match) => {
+    const currentWins = matchArr.reduce((accumulator, match) => {
 
       if (match.winner === player.gamerTag) {
         return accumulator++;
