@@ -1,10 +1,9 @@
-import React from "react";
+import React from 'react';
 import Match from './Match';
-import matchData from '../data/matchData';
 
 const MatchList = props => {
 
-  const oneMatch = matchData[0];
+  const oneMatch = props.matchData[0];
 
   return (
     <section className="PlayerList MatchList">
