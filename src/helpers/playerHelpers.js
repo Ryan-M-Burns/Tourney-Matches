@@ -1,7 +1,3 @@
-import playerData from '../data/playerData';
-import matchData from '../data/matchData';
-
-
 export const preparePlayerData = (playerData) => {
   return Object.values(playerData);
 };
@@ -14,7 +10,7 @@ export const addWinsToPlayers = (playerDataArray, matchArr) => {
     const currentWins = matchArr.reduce((accumulator, match) => {
 
       if (match.winner === player.gamerTag) {
-        return accumulator++;
+        accumulator++;
       }
 
       return accumulator;

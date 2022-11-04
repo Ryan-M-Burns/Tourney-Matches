@@ -9,10 +9,13 @@ function App() {
 
   const playerDataArray = preparePlayerData(playerData);
   const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
-
+  console.log('parsedPlayerData', parsedPlayerData, 'playerData', playerData);
+  console.log({matchData});
   return (
     <div className="App">
-      <h1>Tourney Matches <span>Where Coding and Tournaments found their Match!</span></h1>
+      <h1>
+        Tourney Matches <span>Where Coding and Tournaments found their Match!</span>
+      </h1>
       <PlayerList playerData={parsedPlayerData} />
       <MatchList matchData={matchData} />
     </div>

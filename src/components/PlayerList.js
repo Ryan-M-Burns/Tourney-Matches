@@ -2,8 +2,9 @@ import React from 'react';
 import Player from './Player';
 
 function PlayerList(props) {
-
+  
   const players = props.playerData.map(player => {
+
     return (
       <Player
         key={player.gamerTag}
@@ -12,6 +13,7 @@ function PlayerList(props) {
         lastName={player.lastName}
         wins={player.wins}
       />);
+
   });
 
   return (
