@@ -9,8 +9,7 @@ function App() {
 
   const playerDataArray = preparePlayerData(playerData);
   const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);
-  console.log('parsedPlayerData', parsedPlayerData, 'playerData', playerData);
-  console.log({matchData});
+  
   return (
     <div className="App">
       <h1>
